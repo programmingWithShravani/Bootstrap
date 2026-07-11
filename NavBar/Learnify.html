@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Learnify</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">
+          <img
+            src="/NavBar/image/learnify.png"
+            alt="Learnify"
+            width="200"
+            height="100"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Courses
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+
+                <li><a class="dropdown-item" href="#">Java Programming</a></li>
+
+                <li><a class="dropdown-item" href="#">Python</a></li>
+
+                <li><a class="dropdown-item" href="#">Data Science</a></li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Artificial Intelligence</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Admissions</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Placements</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <form class="d-flex me-3">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search Course"
+            />
+
+            <button class="btn btn-light">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-light">
+              <i class="bi bi-box-arrow-in-right me-1"></i>
+
+              Login
+            </button>
+
+            <button class="btn btn-warning fw-semibold">
+              <i class="bi bi-person-plus-fill me-1"></i>
+
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
