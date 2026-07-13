@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+
+
+.navbar{
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(10px);
+}
+
+.navbar-brand{
+    color:#fff !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#ffc107 !important;
+}
+
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("/HeroSection/image/photo.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.letter-spacing{
+    letter-spacing:4px;
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1.1;
+}
+
+.hero p{
+    max-width:500px;
+}
+
+
+
+.btn{
+    border-radius:35px;
+    padding:12px 28px;
+    font-weight:600;
+}
+
+.btn-warning:hover{
+    transform:translateY(-4px);
+}
+
+.btn-outline-light:hover{
+    transform:translateY(-4px);
+}
+
+
+
+
+.scroll-down{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#fff;
+    text-align:center;
+    animation:scroll 2s infinite;
+}
+
+.scroll-down i{
+    font-size:28px;
+}
+
+.scroll-down p{
+    font-size:14px;
+    margin-top:5px;
+    letter-spacing:2px;
+}
+
+@keyframes scroll{
+
+0%{
+    opacity:0;
+    transform:translate(-50%,0);
+}
+
+50%{
+    opacity:1;
+}
+
+100%{
+    opacity:0;
+    transform:translate(-50%,15px);
+}
+
+}
+
+
+
+.nav-link{
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#ffc107;
+    transition:.4s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+
+.btn-warning{
+    box-shadow:0 0 20px rgba(255,193,7,.35);
+}
+
+.btn-warning:hover{
+    box-shadow:0 0 35px rgba(255,193,7,.7);
+}
