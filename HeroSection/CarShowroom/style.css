@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#000;
+}
+
+.custom-navbar{
+    background:rgba(0,0,0,0.75);
+    backdrop-filter:blur(10px);
+    padding:15px 0;
+}
+
+.navbar-brand{
+    letter-spacing:2px;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin:0 12px;
+    position:relative;
+    transition:.3s;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#ffc107;
+    transition:.4s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width:100%;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("/HeroSection/image/car.jpeg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:65px;
+}
+
+.hero p{
+    color:#ddd;
+    max-width:500px;
+}
+
+.btn-warning{
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-warning:hover{
+    transform:translateY(-4px);
+}
